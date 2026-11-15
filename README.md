@@ -42,14 +42,24 @@ An interactive creative environment for exploring light, motion, form, and matte
 ### 04 / Crypto Entry Watch — Trading Research Console
 **Status:** private R&D / phased production implementation
 
-A research and decision-support system for monitoring crypto-market conditions and evaluating potential entry setups. It is designed to support human analysis rather than execute trades automatically.
+A research-first trading console for monitoring crypto-market conditions, structuring potential entry setups, and supporting disciplined human review. It is a decision-support system, **not an autonomous trading engine**.
 
-- Market-data collection and context from price, derivatives, and liquidity-related sources.
-- Structured baselines, entry blueprints, risk gates, watchlists, and scheduled reviews.
-- **Stack:** Cloudflare Workers, D1, GitHub, JavaScript, API integrations, and automated checks.
-- **Focus:** product architecture, data integrity, observability, risk controls, change management, and evidence-backed QA.
+[![Entry Watch — Trading Console: target architecture and research workflow](images/entry-watch-trading-console-diagram.svg)](images/entry-watch-trading-console-diagram.svg)
 
-*Private project: implementation and operational endpoints are not published in this profile.*
+*Target architecture overview — planned end-to-end operating model; individual components are at different stages of implementation.*
+
+- **Shared data pipeline:** 1–20 active instruments, market-data ingestion from price, spot/futures and liquidity sources, verified snapshots, audit-friendly storage, and an hourly re-evaluation cycle.
+- **Structured baseline A–J:** quantitative and qualitative research covering asset identity, benchmark environment, relative strength, price structure, technical context, open interest and funding, order-flow/CVD, liquidations, execution feasibility, and project/catalyst intelligence.
+- **Five scenario blueprints:** Breakout Acceptance, Breakout Retest, Trend Pullback, Flush Sweep Reclaim, and Range Mean Reversion. Each has its own source requirements and validation context.
+- **Re-evaluation and review:** freshness and material-change checks, model re-checks, source-quality assessment, and operator research review.
+- **Six execution gates (G1–G6):** structure, setup quality, verified flow, risk calibration, execution quality, and operational authorization. Baseline readiness does not imply trade authorization.
+- **Operator outputs:** management console, watchlist and episode history, diagnostics, versioned research documents, and review-oriented alerts.
+
+**Stack:** Cloudflare Workers, D1, GitHub, JavaScript, market-data API integrations, and automated quality checks.
+
+**My contribution:** product conception and architecture, system specifications, AI-assisted development oversight, data-integrity and QA methodology, observability, human-in-the-loop review design, release validation, and phased production planning.
+
+*Private project: source code, operational endpoints, configurations, and internal research artifacts are not published in this profile.*
 
 ### 05 / TechMac — Commercial Website & Business Workflows
 **Live:** [techmac.pl](https://techmac.pl/)
