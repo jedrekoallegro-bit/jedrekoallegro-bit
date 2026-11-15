@@ -44,7 +44,7 @@ An interactive creative environment for exploring light, motion, form, and matte
 
 A research-first trading console for monitoring crypto-market conditions, structuring potential entry setups, and supporting disciplined human review. It is a decision-support system, **not an autonomous trading engine**.
 
-[![Entry Watch — Trading Console: target architecture and research workflow](images/entry-watch-trading-console-diagram.svg)](images/entry-watch-trading-console-diagram.svg)
+[![Entry Watch — Trading Console: target architecture and research workflow](images/entry-watch-trading-console-diagram.png)](images/entry-watch-trading-console-diagram.png)
 
 *Target architecture overview — planned end-to-end operating model; individual components are at different stages of implementation.*
 
